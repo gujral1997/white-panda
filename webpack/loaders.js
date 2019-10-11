@@ -56,12 +56,19 @@ const JSLoader = {
   use: {
     loader: 'babel-loader',
     options: {
-      babelrcRoots: ['.', '../'],
-      presets: ['@babel/preset-react'],
+      presets: ['@babel/env', '@babel/typescript', '@babel/preset-react'],
       plugins: [
         '@babel/plugin-proposal-class-properties',
         '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-syntax-dynamic-import',
         'syntax-dynamic-import',
+        [
+          'import',
+          {
+            libraryName: 'antd',
+            style: true,
+          },
+        ],
       ],
     },
   },
@@ -87,6 +94,13 @@ const ESLintLoader = {
   },
 };
 
+const AssetLoader = {
+  test: /\.(eot|woff|ttf|svg|png|jpg|wav|mp3)$/,
+  use: {
+    loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]',
+  },
+};
+
 module.exports = {
   JSLoader,
   htmlLoader,
@@ -94,4 +108,5 @@ module.exports = {
   LessLoader,
   SVGLoader,
   ESLintLoader,
+  AssetLoader
 };

@@ -1,12 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-
-import './css/index.css';
-import CLASSES from './css/index.css.json';
+import Home from './containers/Home';
 
 render(
-  <h1 className={CLASSES.heading}>White Panda</h1>,
+  <Home />,
   document.getElementById('root')
 );
 // If you want your app to work offline and load faster, you can change

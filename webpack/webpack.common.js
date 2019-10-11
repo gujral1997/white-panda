@@ -3,6 +3,9 @@ const plugins = require('./plugins');
 
 module.exports = {
   entry: ['./src/index.tsx'],
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
   module: {
     rules: [
       loaders.JSLoader,
