@@ -1,0 +1,15 @@
+import React from 'react';
+import { render } from 'react-dom';
+import * as serviceWorker from './serviceWorker';
+
+import './css/index.css';
+import CLASSES from './css/index.css.json';
+
+render(
+  <h1 className={CLASSES.heading}>White Panda</h1>,
+  document.getElementById('root')
+);
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
