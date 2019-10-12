@@ -77,5 +77,16 @@
     "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1",
     "webpack-visualizer-plugin": "^0.1.11"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,scss,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
