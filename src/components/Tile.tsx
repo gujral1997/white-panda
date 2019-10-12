@@ -29,12 +29,17 @@ const Tile: FC<TileProps> = ({ price, selected, heading }) => {
       >
         <Row>
           <Col span={6}>
-            <img
-              style={{ margin: 10 }}
-              height={60}
-              width={60}
-              src={require("../assets/image.png")}
-            />
+            {selected ? <div style={{
+              height: 60,
+              width: 60,
+              borderRadius: 30,
+              background: COLORS.SEA_GREEN
+            }} /> : <img
+                style={{ margin: 10 }}
+                height={60}
+                width={60}
+                src={require("../assets/image.png")}
+              />}
           </Col>
           <Col span={18} style={{ textAlign: "left", paddingLeft: 16 }}>
             <Row
