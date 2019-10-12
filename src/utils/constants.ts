@@ -5,8 +5,8 @@ export enum COLORS {
   GRAY = "#999",
   LIGHT_GRAY = "#a6a6a6",
   DARK_GRAY = "#4a4a4a",
-  PARROT_GREEN = "bee58b",
-  RED = "e0666c",
+  PARROT_GREEN = "#bee58b",
+  RED = "#e0666c",
   ICON_GRAY = "#686868"
 }
 

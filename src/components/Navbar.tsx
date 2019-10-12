@@ -23,7 +23,6 @@ const Navbar = () => {
 
   const { selected } = state;
 
-  console.log(width);
   const styles: { [key: string]: CSSProperties } = {
     container: {
       display: "flex",
