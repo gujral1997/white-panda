@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Col } from "antd";
 import useWindowDimensions from "../hooks/UseWindowDimension";
 import Header from "./Header";
@@ -7,23 +7,20 @@ import { COLORS } from "../utils/constants";
 
 const Container = () => {
   const { height } = useWindowDimensions();
+
+  const container: CSSProperties = {
+    float: "right",
+    height,
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    background: COLORS.MILD_GRAY,
+    zIndex: -1
+  };
+
   return (
-    <Col
-      xs={22}
-      sm={22}
-      md={23}
-      xl={23}
-      style={{
-        float: "right",
-        height,
-        textAlign: "center",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        background: COLORS.MILD_GRAY,
-        zIndex: -1
-      }}
-    >
+    <Col xs={22} sm={22} md={23} xl={23} style={container}>
       <Header />
       <Body />
     </Col>
