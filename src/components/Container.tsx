@@ -16,7 +16,7 @@ const Container = () => {
     alignItems: "center",
     flexDirection: "column",
     background: COLORS.MILD_GRAY,
-    zIndex: -1
+    zIndex: 1
   };
 
   return (
