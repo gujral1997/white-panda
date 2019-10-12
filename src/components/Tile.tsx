@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Tile = () => {
-  return (
-    <div>
-
-    </div>
-  );
+  return <div>Tile</div>;
 };
 
 export default Tile;

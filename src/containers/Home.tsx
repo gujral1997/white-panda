@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React from "react";
+import { Row } from "antd";
+import Navbar from "../components/Navbar";
+import Container from "../components/Container";
+//@ts-ignore
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
-        White Panda
-      </div>
-    );
-  }
-}
+const Home = () => {
+  return (
+    <Row>
+      <Navbar />
+      <Container />
+    </Row>
+  );
+};
 
 export default Home;
