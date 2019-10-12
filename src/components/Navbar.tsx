@@ -66,7 +66,7 @@ const Navbar = () => {
       md={1}
       xl={1}
       className={CLASSES.shadow}
-      style={{ height }}
+      style={{ height, position: "fixed" }}
     >
       <div style={styles.container}>
         {icons.map(elem => (

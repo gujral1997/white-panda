@@ -1,3 +1,8 @@
 .shadow {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(100,100,100,0.075);
+  background: white;
+}
+
+body {
+  font-family:'Roboto',sans-serif
 }

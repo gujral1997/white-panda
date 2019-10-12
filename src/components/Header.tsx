@@ -17,7 +17,9 @@ const Header = () => {
         minHeight: "50px",
         width: "100%",
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "center",
+        position: "fixed",
+        zIndex: 1
       }}
     >
       <div

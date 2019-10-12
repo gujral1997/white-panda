@@ -14,6 +14,7 @@ module.exports = {
       loaders.LessLoader,
       loaders.SVGLoader,
       loaders.ESLintLoader,
+      loaders.AssetLoader
     ],
   },
   plugins: [
